@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header-navigation">
+        <div class="nav-container">
+            <div class="header-logo">
+                <a href="#"><img src="images/court-shoes-logo.png" alt="Court Shoes Store: Tennis & Pickleball" /></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()"><span class="material-symbols-outlined">menu</span></div>
+            <nav id="mobileMenu">
+                <div class="nav-item" onclick="scrolldiv('about')">ABOUT</div>
+                <div class="nav-item" onclick="scrolldiv('brands')">OUR BRANDS</div>
+                <div class="nav-item" onclick="scrolldiv('location')">LOCATION</div>
+
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section id="banner">
+            <div class="banner-container">
+                <div class="wrapper">
+                    <div class="banner-text">
+                        <div class="main-banner-text">
+                            <h1> Your next pair of tennis or pickleball shoes starts here.</h1>
+                            <p>Court Shoes Store specializes in performance footwear for tennis and pickleball players of all levels. We deliver quality brands, expert guidance, and the right fit for your game.</p>
+                        </div>
+                        <div class="banner-buttons">
+                            <a href="#brands" class="button" onclick="scrolldiv('brands'); return false;">Explore our Brands</a> <a href="#location" class="button secondary" onclick="scrolldiv('location'); return false;">Visit Our Store</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="wrapper">
+                <h2>About</h2>
+                <p><b>Court Shoes Store: Tennis and Pickleball</b> is Cleveland, TN's destination for high-performance pickleball and tennis shoes. We offer a carefully selected lineup of top court shoe brands designed for comfort, stability, and durability.
+                    Whether you're stepping onto the pickleball court for the first time, competing in tournaments, or playing tennis at any level, our knowledgeable team is here to help you find the right footwear for your game. Racquet or paddle, beginner
+                    or seasoned player—Court Shoes Store is proud to support you every step on the court.</p>
+            </div>
+        </section>
+        <section id="brands">
+            <div class="wrapper">
+                <h2>OUR BRANDS</h2>
+
+                <ul>
+                    <li class="brand">
+                        <img src="images/nike.png" alt="Nike">
+                    </li>
+                    <li class="brand">
+                        <img src="images/adidas.jpg" alt="Adidas">
+                    </li>
+                    <li class="brand">
+                        <img src="images/asics.png" alt="Asics">
+                    </li>
+                    <li class="brand">
+                        <img src="images/wilson.png" alt="Wilson">
+                    </li>
+                    <li class="brand">
+                        <img src="images/kswiss.png" alt="kswiss">
+                    </li>
+                    <li class="brand">
+                        <img src="images/mizuno.png" alt="Mizuno">
+                    </li>
+                    <li class="brand">
+                        <img src="images/selkirk.jpg" alt="Selkirk">
+                    </li>
+                    <li class="brand">
+                        <img src="images/head.png" alt="HEAD">
+                    </li>
+                    <li class="brand">
+                        <img src="images/diadem.png" alt="Diadem">
+                    </li>
+                    <li class="brand">
+                        <img src="images/thorlo.png" alt="Thorlo">
+                    </li>
+                    <li class="brand">
+                        <img src="images/montis.png" alt="Montis">
+                    </li>
+                    <li class="brand">
+                        <img src="images/solase.png" alt="Solase Pickleball">
+                    </li>
+                    <li class="brand">
+                        <img src="images/cypher.png" alt="Cypher Pickleball">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="location">
+            <div class="wrapper">
+                <h2>Location & Hours</h2>
+                <div class="location-info">
+                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.0830879851337!2d-84.8661178!3d35.179481599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885e2bef5fba7a31%3A0x85c0788b934c6dea!2sCourt%20Shoes%20Store%3A%20Tennis%20and%20Pickleball!5e0!3m2!1sen!2sus!4v1771715289330!5m2!1sen!2sus"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="hours">
+
+                        <ul>
+                            <li>Monday: CLOSED</li>
+                            <li>Tuesday: CLOSED</li>
+                            <li>Wednesday: 12 pm - 6 pm</li>
+                            <li>Thursday: 12 pm - 6 pm</li>
+                            <li>Friday: 12 pm - 6 pm</li>
+                            <li>Saturday: 12 pm - 6 pm</li>
+                            <li>Sunday: 12 pm - 6 pm </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Court Shoes Store: Tennis & Pickelball
+                </div>
+                <div class="contact">
+                    Email Us: <a href="mailto:courtshoesstore@gmail.com">courtshoesstore@gmail.com</a>
+                </div>
+                <!-- <div class="footer-links">
+                    <ul>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
